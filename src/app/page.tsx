@@ -2,7 +2,7 @@ import { Container } from '@/components/Container';
 import { Header } from '@/components/Header';
 import { PostCoverImage } from '@/components/PostCoverImage';
 import { PostHeading } from '@/components/PostHeading';
-import { PostsList } from '@/components/PostsLIst';
+import { PostsList } from '@/components/PostsList';
 import { SpinLoader } from '@/components/SpinLoader';
 import { Suspense } from 'react';
 
