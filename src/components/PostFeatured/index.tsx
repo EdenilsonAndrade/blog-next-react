@@ -1,5 +1,5 @@
 import { PostCoverImage } from '../PostCoverImage';
-import { PostHeading } from '../PostHeading';
+import { PostSummary } from '../PostSummary';
 
 export function PostFeatured() {
   const slug = 'qualquer';
@@ -16,25 +16,14 @@ export function PostFeatured() {
           priority: true,
         }}
       />
-      <div className='flex flex-col gap-4 sm:justify-center'>
-        <time
-          className='text-slate-600 block text-sm/tight'
-          dateTime='2025-06-30'
-        >
-          30/06/2025 10:00
-        </time>
 
-        <PostHeading as='h1' url={postLink}>
-          Incidunt voluptatem accusantium perferendis?
-        </PostHeading>
-
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-          molestiae, illum magnam reprehenderit, dolorum, et impedit rem est
-          odit veniam sint amet eum facilis temporibus labore. Incidunt
-          voluptatem accusantium perferendis?
-        </p>
-      </div>
+      <PostSummary
+        postHeading='h1'
+        postLink={postLink}
+        createdAt='2025-04-05T00:14:03.175Z'
+        title='Como a tecnologia impacta nosso bem-estar'
+        excerpt='Como a tecnologia impacta nosso bem-estar'
+      />
     </section>
   );
 }
