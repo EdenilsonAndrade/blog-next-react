@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 /* se quiser fazer o controle de tema claro e escuro
 @custom-variant dark (&:where(.dark, .dark *)); */
