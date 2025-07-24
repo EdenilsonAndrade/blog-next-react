@@ -1,4 +1,9 @@
 'use client';
+// cuidar com use client, pois ao importar algum arquivo server ele se transforma em client, ele e seus filhos.
+// neste caso o ErrorMessage não é um problema pois não tem informação restrita ao servidor,
+// se o conteúdo do ErrorMessage fosse algo que não pode ser visto pelo cliente,
+// então poderia passar o mesmo como propriedade para o componente RootErrorPage,
+// com isso o ErrorMessage continuaria sendo um componente server
 
 import ErrorMessage from '@/components/ErrorMessage';
 import { useEffect } from 'react';
