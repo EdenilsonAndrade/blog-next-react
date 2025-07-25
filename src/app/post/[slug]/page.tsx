@@ -20,6 +20,17 @@ export async function generateMetadata({
   };
 }
 
+// export async function generateStaticParams() { necessário se for exportar o site como estático, contém algumas alterações ver aula 143 da seção 3: Next.js 15,....
+//   const posts = await findAllPublicPostsCached();
+//   const params = posts.map(post => {
+//     return {
+//       slug: post.slug,
+//     };
+//   });
+
+//   return params;
+// }
+
 export default async function PostSlugPage({ params }: PostSlugPageProps) {
   const { slug } = await params;
 
